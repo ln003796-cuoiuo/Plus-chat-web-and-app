@@ -1,32 +1,66 @@
-<?php
-// pluschat_ru/index.php
-// Главный сайт плюсчат.рф
-
-header('Content-Type: text/html; charset=utf-8');
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПлюсЧат - Твой безопасный мессенджер</title>
+    <title>ПлюсЧат - Безопасный мессенджер</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f0f2f5; }
-        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #3390ec; }
-        .btn { display: inline-block; padding: 15px 30px; background: #3390ec; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        .btn:hover { background: #2775c9; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: white;
+            color: #764ba2;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .status {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Добро пожаловать в ПлюсЧат</h1>
-        <p>Современный мессенджер с открытым исходным кодом.</p>
-        <p>Скачайте наше приложение или используйте веб-версию.</p>
-        
-        <a href="/webapp/" class="btn">Открыть Веб-версию</a>
-        <br><br>
-        <small>Сервер защищен HTTPS. IP: 195.3.246.75</small>
+        <h1>🔒 ПлюсЧат</h1>
+        <p>Безопасный мессенджер с динамическим шифрованием</p>
+        <a href="/app/" class="btn">Открыть веб-версию</a>
+        <div class="status">
+            Сервер протокола: <strong>прото.плюсчат.рф</strong><br>
+            IP сервера: 195.3.246.75
+        </div>
     </div>
 </body>
 </html>
