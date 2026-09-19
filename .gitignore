@@ -1,17 +1,15 @@
 ```
 # Dependencies
 node_modules/
-.venv/
 venv/
+.venv/
 __pycache__/
 .mypy_cache/
 .pytest_cache/
-dist/
-build/
 target/
 .gradle/
 
-# Compiled files
+# Compiled/Binary files
 *.pyc
 *.class
 *.o
@@ -22,11 +20,13 @@ target/
 *.obj
 *.out
 
-# Logs and temp files
+# Build artifacts
+dist/
+build/
+coverage/
+htmlcov/
 *.log
 *.tmp
-*.swp
-*.swo
 
 # Environment
 .env
@@ -36,15 +36,12 @@ target/
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# System files
+# System
 .DS_Store
 Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
 
 # Compressed files
 *.zip
