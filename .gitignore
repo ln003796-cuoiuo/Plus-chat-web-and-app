@@ -1,49 +1,74 @@
 ```
+# Build outputs
+build/
+dist/
+target/
+
 # Dependencies
 node_modules/
-venv/
-.venv/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
-target/
-.gradle/
+vendor/
+libs/
 
-# Compiled/Binary files
-*.pyc
-*.class
-*.o
-*.exe
-*.dll
-*.so
-*.a
-*.obj
-*.out
-
-# Build artifacts
-dist/
-build/
-coverage/
-htmlcov/
-*.log
-*.tmp
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# System
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Compressed files
+# APK and Android build artifacts
+*.apk
+*.aab
+*.aar
+app/build/
+TMessagesProj/build/
+TMessagesProj_App/build/
+TMessagesProj_AppHockeyApp/build/
+TMessagesProj_AppHuawei/build/
+TMessagesProj_AppStandalone/build/
+TMessagesProj_AppTests/build/
+
+# Compiled Java/Android
+*.class
+*.dex
+*.jar
+
+# Android specific
+*.keystore
+local.properties
+gradle/wrapper/
+
+# Generated JNI headers
+jni/voip/webrtc/sdk/android/generated*/**/*.h
+
+# Coverage reports
+coverage/
+htmlcov/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Compression artifacts
 *.zip
 *.gz
 *.tar
@@ -66,4 +91,5 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+
 ```
